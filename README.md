@@ -1,9 +1,9 @@
-# WebLdap
-WebLdap is a webapp tool for creating open ldap user accounts.
+# WebLDAP
+WebLDAP is a webapp tool for creating open ldap user accounts.
 
 
-# About WebLdap
-WebLdap is a prototype and should not be used in production.
+# About WebLDAP
+WebLDAP is a prototype and should not be used in production.
 
 The ideal use, if production ready, is within an organization's intranet.
 
@@ -11,7 +11,7 @@ The ideal use, if production ready, is within an organization's intranet.
 Install Python3
 
 ````
-git clone https://github.com/AndyMtz04/WebLdap.git
+git clone https://github.com/AndyMtz04/WebLDAP.git
 ````
 ```` 
 pip install -r requirements
@@ -19,7 +19,7 @@ pip install -r requirements
 
 Start a django project
 
-Add WebLdap to django project settings
+Add WebLDAP to django project settings
 
 Migrate models
 
