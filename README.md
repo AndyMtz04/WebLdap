@@ -28,7 +28,7 @@ Add ldap server credentials to ldap_accounts.py
 Start django webserver
 
 # Example
-![Alt text](https://github.com/AndyMtz04/WebLDAP/images/WebLDAP_example.png)
+![Alt text](https://github.com/AndyMtz04/WebLDAP/blob/master/images/WebLDAP_example.png)
 
 # Todo
 
