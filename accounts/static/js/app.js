@@ -18,11 +18,10 @@ app.config(function ($interpolateProvider, $httpProvider, $resourceProvider) {
 });
 
 
-function test($scope, $http) {
-    var currentDate = new Date;
-    $scope.timeString = currentDate.toTimeString();
+function create($scope, $http) {
 
     $scope.submitData = function() {
+        // Function submits account info to REST api.
 
         $http({method: 'POST', url: '/account/', data: {'username': $scope.userName, 'usernumber': $scope.userNumber, 'password': $scope.passWord}}).
         then(function(response) {
@@ -53,8 +52,7 @@ function test($scope, $http) {
     }
 
 
- //create a service for the stuff below
- //can possibly delete, only need POST
+    // for debugging purposes
     $scope.method = 'GET';
     $scope.url = '/account/';
     $scope.response = null;

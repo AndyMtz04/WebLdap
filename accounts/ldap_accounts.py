@@ -17,6 +17,7 @@ conn = ldap3.Connection(server, 'cn={0},dc={1},dc={2}'.format(LDAP_ADMIN, DC_1, 
 
 
 def create_account(username, user_number, user_password):
+    """Function creates the openldap user accounts."""
     uid = username
     uid_number = user_number
     password = user_password

@@ -8,7 +8,7 @@ from accounts import ldap_accounts
 
 @api_view(['POST']) # add GET to debug
 def account_list(request):
-
+    """REST api validates account information to forward the info to ldap_accounts."""
     if request.method == 'GET':
 
         return Response(ldap_accounts.get_accounts())
