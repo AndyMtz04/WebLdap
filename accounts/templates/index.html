@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="{% static 'css/site.css'%}">
+    <script src="{% static 'js/angular.min.js'%}"></script>
+    <script src="{% static 'js/angular-resource.min.js'%}"></script>
+    <script src="{% static 'js/app.js'%}"></script>
+</head>
+
+<body ng-app="app">
+    <div ng-controller="test">
+        <h1>Create user account</h1>
+        <p>Enter username: <input name="userName" ng-model="userName"></p>
+        <p>Enter usernumber: <input name="userNumber" ng-model="userNumber"></p>
+        <p>Enter password: <input type="password" name="passWord" ng-model="passWord"></p>
+        <button ng-click="submitData()">Submit</button>
+        <p ng-repeat="x in data">[[x]]</p>
+    </div>
+</body>
+</html>
