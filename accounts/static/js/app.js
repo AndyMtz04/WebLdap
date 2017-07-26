@@ -1,6 +1,6 @@
 var app = angular.module("app", ['ngResource']);
 
-app.controller("test", test);
+app.controller("create", create);
 
 app.config(function ($interpolateProvider, $httpProvider, $resourceProvider) {
     // Force angular to use square brackets for template tag
